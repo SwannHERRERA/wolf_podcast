@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wolf_podcast_app/constants.dart';
+import 'package:wolf_podcast_app/customIcon.dart';
 import 'package:wolf_podcast_app/theme.dart';
 
 void main() {
@@ -40,7 +41,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        leading: Icon(Icons.menu),
+        actions: [Icon(Icons.android_sharp)],
       ),
       body: Center(
         child: Column(
