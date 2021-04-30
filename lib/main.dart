@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/components/Podcast.dart';
 import 'package:flutter_app/components/playBar.dart';
 
 void main() {
@@ -52,9 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    'You have pushed the button this many times:',
-                  ),
+                  Podcast(),
                   Text(
                     '$_counter',
                     style: Theme.of(context).textTheme.headline4,
@@ -62,15 +61,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
             ),
-            Expanded(
-              child: Align(
-                alignment: FractionalOffset.bottomCenter,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 50),
-                  child: PlayBar(),
-                ),
-              ),
-            )
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 50),
+              child: PlayBar(),
+            ),
           ],
         ),
       ),
