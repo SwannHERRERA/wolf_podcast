@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/components/Podcast.dart';
 import 'package:flutter_app/components/playBar.dart';
 
 void main() {
@@ -53,7 +52,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Podcast(),
                   Text(
                     '$_counter',
                     style: Theme.of(context).textTheme.headline4,

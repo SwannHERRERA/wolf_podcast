@@ -24,11 +24,11 @@ class _PlayBarState extends State<PlayBar> {
             onPressed: () {
               if (widget.isPlaying) {
                 setState(() {
-                  widget.playPauseButton = Icon(Icons.pause_rounded);
+                  widget.playPauseButton = Icon(Icons.play_arrow_rounded);
                 });
               } else {
                 setState(() {
-                  widget.playPauseButton = Icon(Icons.play_arrow_rounded);
+                  widget.playPauseButton = Icon(Icons.pause_rounded);
                 });
               }
               widget.isPlaying = !widget.isPlaying;
